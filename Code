@@ -1,0 +1,193 @@
+import random
+
+print("Press enter to roll the dice..\U0001F3B2")
+
+import time
+
+import sys
+
+
+
+
+done = 'false'
+
+#here is the animation
+
+def animate():
+
+    while done == 'false':
+
+        sys.stdout.write('\rloading |')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading /')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading -')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading \\')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading |')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading /')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading -')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading \\')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading |')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading /')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading -')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading \\')
+
+        time.sleep(0.1)
+
+        break
+
+
+
+
+
+
+
+def roll():
+
+    dice = (random.randint(1,6))
+
+    if dice == 1:
+
+        animate()
+
+        print()
+
+        print("------------")
+
+        print("|          |")
+
+        print("|     0    |")
+
+        print("|          |")
+
+        print("------------")
+
+    elif dice == 2:
+
+        animate()
+
+        print()
+
+        print("------------")
+
+        print("| 0         |")
+
+        print("|           |")
+
+        print("|        0  |")
+
+        print("------------")
+
+    elif dice == 3:
+
+        animate()
+
+        print()
+
+        print("------------")
+
+        print("| 0        |")
+
+        print("|     0    |")
+
+        print("|        0 |")
+
+        print("------------")
+
+    elif dice == 4:
+
+        animate()
+
+        print()
+
+        print("------------")
+
+        print("| 0      0 |")
+
+        print("|          |")
+
+        print("| 0      0 |")
+
+        print("------------")
+
+    elif dice == 5:
+
+        animate()
+
+        print()
+
+        print("------------")
+
+        print("| 0      0 |")
+
+        print("|     0    |")
+
+        print("| 0      0 |")
+
+        print("------------")
+
+    if dice == 6:
+
+        animate()
+
+        print()
+
+        print("------------")
+
+        print("|  0     0  |")
+
+        print("|  0     0  |")
+
+        print("|  0     0  |")
+
+        print("------------")
+
+
+
+
+
+
+
+
+
+
+no = 0
+
+while no != "x":
+
+    roll()
+
+    print("Press enter to roll again or 'x' to stop.")
+
+    no = input("\U0001F3B2~")
